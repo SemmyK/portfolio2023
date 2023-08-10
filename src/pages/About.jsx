@@ -2,8 +2,6 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import mern from '../assets/mernstack1.png'
 import coding from '../assets/working.gif'
-import { useState } from 'react'
-import PdfModal from '../components/PdfModal'
 
 function About() {
 	const navigate = useNavigate()

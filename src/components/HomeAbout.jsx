@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Image from '../assets/cvphoto.jpg'
+import Image from '../assets/profile.jpg'
 
 import { Container, Row, Col, Card } from 'react-bootstrap'
 
@@ -10,7 +10,11 @@ export default function HomeAbout() {
 				<Col sm={10} md={5} className='text-right  img-col mx-auto'>
 					<img src={Image} alt='profile' className='img-fluid' />
 				</Col>
-				<Col sm={12} md={6} className='short-about text-dark mx-auto'>
+				<Col
+					sm={12}
+					md={6}
+					className='short-about text-dark mx-auto justify-self-center align-self-center'
+				>
 					<Card.Body>
 						<Card.Title className='display-6'>
 							Junior Full-stack Developer
