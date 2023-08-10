@@ -16,7 +16,7 @@ export default function HomeAbout() {
 					className='short-about text-dark mx-auto justify-self-center align-self-center'
 				>
 					<Card.Body>
-						<Card.Title className='display-6'>
+						<Card.Title className='display-6' style={{ fontWeight: '500' }}>
 							Junior Full-stack Developer
 						</Card.Title>
 						<Card.Subtitle
