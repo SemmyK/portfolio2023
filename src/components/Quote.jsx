@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+//components
 import { Container, Card, Row } from 'react-bootstrap'
 
 let quoteData = []

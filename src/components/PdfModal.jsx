@@ -1,9 +1,11 @@
-import { Row, Col } from 'react-bootstrap'
-import cv from '../pdf/CV2023.pdf'
-import { pdfjs, Document, Page } from 'react-pdf'
-import 'react-pdf/dist/Page/TextLayer.css'
 import { useNavigate } from 'react-router-dom'
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
+//assets
+import cv from '../pdf/CV2023.pdf'
+//style
+import 'react-pdf/dist/Page/TextLayer.css'
+//components
+import { Row, Col } from 'react-bootstrap'
+import { Document, Page } from 'react-pdf'
 
 function PdfModal() {
 	const navigate = useNavigate()

@@ -1,6 +1,6 @@
+//components
 import { StyledFooter } from '../styled/Footer.styles'
 import { Col, Row } from 'react-bootstrap'
-
 //icons
 import LinkedIn from '../assets/icons/LinkedIn-white_icon.png'
 import GitHub from '../assets/icons/github-white.png'

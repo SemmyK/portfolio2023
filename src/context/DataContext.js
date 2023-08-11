@@ -1,5 +1,6 @@
-import { collection, onSnapshot, orderBy, query } from 'firebase/firestore'
 import { createContext, useEffect, useReducer } from 'react'
+//firebase
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore'
 import { db } from '../firebase/config'
 
 export const DataContext = createContext()

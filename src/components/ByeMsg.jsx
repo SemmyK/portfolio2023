@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+//components
 import { Container, Row } from 'react-bootstrap'
-
 import TypeWriterEffect from 'react-typewriter-effect'
 
 let words = [

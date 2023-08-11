@@ -1,7 +1,9 @@
-import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
+//assets
 import mern from '../assets/mernstack1.png'
 import coding from '../assets/working.gif'
+//components
+import { Container, Row, Col, Card } from 'react-bootstrap'
 
 function About() {
 	const navigate = useNavigate()
@@ -44,7 +46,23 @@ function About() {
 											Finished Python Development program with IT Academy trying
 											to become full-stack developer
 										</li>
-										<li>Learning MERN stack</li>
+										<li>
+											Finished Udemy The Complete 2023 Web Development Bootcamp
+											Course by Angela Yu (App Brewery)
+										</li>
+										<li>
+											Finished Udemy Build Web Apps with React & Firebase Course
+											by The Net Ninja (Shaun Pelling)
+										</li>
+										<li>
+											Finished Udemy React Front to Back Course by Brad Traversy
+											(Traversy Media)
+										</li>
+										<li>
+											Learning MERN stack with Udemy MERN Stack Course -
+											MongoDb, Express, React and NodeJS by John Smilga (Coding
+											addict)
+										</li>
 									</Card.Text>
 									<button
 										onClick={() => navigate('/about/cv')}

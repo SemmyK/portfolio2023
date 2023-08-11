@@ -1,9 +1,10 @@
-import { Container, Card, CardGroup, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-
-import { useDataContext } from '../hooks/useDataContext'
-import { SyncLoader } from 'react-spinners'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+//hooks
+import { useDataContext } from '../hooks/useDataContext'
+//components
+import { Container, Card, CardGroup, Row, Col } from 'react-bootstrap'
+import { SyncLoader } from 'react-spinners'
 
 export default function HomeProjects() {
 	const { allData, loading } = useDataContext()
@@ -22,7 +23,7 @@ export default function HomeProjects() {
 					alignItems: 'center',
 				}}
 			>
-				<SyncLoader />
+				<SyncLoader color='#662d91' size='30px' />
 			</div>
 		)
 	}
@@ -36,7 +37,7 @@ export default function HomeProjects() {
 								<Col xs={10} md={5} lg={4} key={project.id} className='my-2'>
 									<Card border='light' className='single-card'>
 										<Card.Header className='lead text-center'>
-											{project.used.map(item => (
+											{project.used.slice(0, 4).map(item => (
 												<span key={item}>{item}</span>
 											))}
 										</Card.Header>
@@ -45,7 +46,7 @@ export default function HomeProjects() {
 												{project.name}
 											</Card.Title>
 											<Link
-												to={`/projects/:${project.id}`}
+												to={`/projects/${project.id}`}
 												style={{ display: 'inline-block', height: '11em' }}
 											>
 												<Card.Img
@@ -60,7 +61,7 @@ export default function HomeProjects() {
 											</Card.Text>
 										</Card.Body>
 										<Link
-											to={`/projects/:${project.id}`}
+											to={`/projects/${project.id}`}
 											className='project-link'
 										>
 											See more...

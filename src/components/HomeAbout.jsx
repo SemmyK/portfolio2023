@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
+//assets
 import Image from '../assets/profile.jpg'
-
+//components
 import { Container, Row, Col, Card } from 'react-bootstrap'
 
 export default function HomeAbout() {

@@ -1,27 +1,42 @@
-import { useDataContext } from '../hooks/useDataContext'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+//hooks
+import { useDataContext } from '../hooks/useDataContext'
+//components
 import { Container, Card, CardGroup, Row, Col } from 'react-bootstrap'
 import { SyncLoader } from 'react-spinners'
 
 function Projects() {
+	const isMounted = useRef(true)
 	const { allData, loading } = useDataContext()
+	const [allProjects, setAllProjects] = useState(null)
+
+	useEffect(() => {
+		if (isMounted) {
+			allData && setAllProjects(allData)
+		}
+		return () => (isMounted.current = false)
+	}, [allData, isMounted])
 
 	if (loading) {
 		return (
 			<div
 				style={{
+					width: '100%',
+					height: '45vh',
 					display: 'flex',
 					justifyContent: 'center',
 					alignItems: 'center',
+					marginTop: '10em',
 				}}
 			>
-				<SyncLoader />
+				<SyncLoader color='#662d91' size='30px' />
 			</div>
 		)
 	}
 
 	return (
-		allData && (
+		allProjects && (
 			<Container fluid className='home-projects ' style={{ marginTop: '7em' }}>
 				<h2
 					className='text-center display-6'
@@ -31,8 +46,8 @@ function Projects() {
 				</h2>
 				<CardGroup className='d-flex cards'>
 					<Row className='justify-content-around mx-0'>
-						{allData.length !== 0 &&
-							allData.map(project => (
+						{allProjects.length !== 0 &&
+							allProjects.map(project => (
 								<Col xs={10} md={5} lg={4} key={project.id} className='my-2'>
 									<Card border='light' className='single-card'>
 										<Card.Header className='lead text-center'>
@@ -45,7 +60,7 @@ function Projects() {
 												{project.name}
 											</Card.Title>
 											<Link
-												to={`/projects/:${project.id}`}
+												to={`/projects/${project.id}`}
 												style={{ display: 'inline-block', height: '11em' }}
 											>
 												<Card.Img
@@ -60,7 +75,7 @@ function Projects() {
 											</Card.Text>
 										</Card.Body>
 										<Link
-											to={`/projects/:${project.id}`}
+											to={`/projects/${project.id}`}
 											className='project-link'
 										>
 											See more...

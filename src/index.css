@@ -1,9 +1,10 @@
-body {
+html,
+body,
+#root {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
+	height: 100% !important;
 }
 
 header,
@@ -193,4 +194,37 @@ main {
 .cv-div .react-pdf__Page__annotations {
 	display: none;
 	visibility: hidden;
+}
+
+/* single project page style */
+
+.project-name {
+	text-align: center;
+	color: #662d91;
+}
+
+.hosting-link {
+	text-decoration: none;
+	color: #662d91;
+}
+
+/* link transition*/
+.fade-enter {
+	font-size: 1.5em;
+	font-weight: 900;
+}
+.fade-enter-active {
+	font-weight: 500;
+	transition: font-weight 2s;
+	transition-timing-function: ease-in;
+}
+
+.fade-exit {
+	font-weight: 700;
+}
+.fade-exit-active {
+	font-size: 1.5em;
+	font-weight: 900;
+	transition: font-weight 2s;
+	transition-timing-function: ease-out;
 }
