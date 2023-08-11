@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 //assets
 import mern from '../assets/mernstack1.png'
 import coding from '../assets/working.gif'
+import pdf from '../pdf/CV2023.pdf'
 //components
 import { Container, Row, Col, Card } from 'react-bootstrap'
 
@@ -64,13 +65,28 @@ function About() {
 											addict)
 										</li>
 									</Card.Text>
-									<button
-										onClick={() => navigate('/about/cv')}
-										className='cv'
-										style={{ textAlign: 'left', border: 'none' }}
-									>
-										See my CV
-									</button>
+									<Row>
+										<Col>
+											{' '}
+											<button
+												onClick={() => navigate('/about/cv')}
+												className='cv'
+												style={{ textAlign: 'left', border: 'none' }}
+											>
+												See my CV
+											</button>
+										</Col>
+										<Col>
+											<a href={pdf} download>
+												<button
+													className='cv'
+													style={{ textAlign: 'left', border: 'none' }}
+												>
+													Download my CV
+												</button>
+											</a>
+										</Col>
+									</Row>
 								</Card.Body>
 							</Col>
 						</Row>

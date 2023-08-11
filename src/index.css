@@ -191,11 +191,6 @@ main {
 	height: 70% !important;
 }
 
-.cv-div .react-pdf__Page__annotations {
-	display: none;
-	visibility: hidden;
-}
-
 /* single project page style */
 
 .project-name {
