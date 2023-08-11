@@ -65,9 +65,8 @@ function About() {
 											addict)
 										</li>
 									</Card.Text>
-									<Row>
+									<Row style={{ boxSizing: 'border-box' }}>
 										<Col>
-											{' '}
 											<button
 												onClick={() => navigate('/about/cv')}
 												className='cv'
