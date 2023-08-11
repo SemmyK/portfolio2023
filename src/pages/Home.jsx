@@ -16,11 +16,12 @@ function Home() {
 			<HomeProjects />
 			<Row
 				className='w-80 mx-auto  align-items-center'
-				style={{ boxSizing: 'border-box', justifyContent: 'center' }}
+				style={{ boxSizing: 'border-box', justifyContent: 'space-evenly' }}
 			>
 				<Col
 					xs={12}
 					md={6}
+					xl={3}
 					className='align-self-center my-1 mx-auto text-center'
 				>
 					<button
@@ -34,6 +35,7 @@ function Home() {
 				<Col
 					xs={12}
 					md={6}
+					xl={3}
 					className='align-self-center my-1 mx-auto text-center'
 				>
 					<a href={pdf} download>
