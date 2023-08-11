@@ -22,7 +22,7 @@ function Home() {
 					<button
 						onClick={() => navigate('/about/cv')}
 						className='cv'
-						style={{ textAlign: 'left', border: 'none' }}
+						style={{ textAlign: 'left', border: 'none', width: '100%' }}
 					>
 						See my CV
 					</button>
@@ -31,7 +31,7 @@ function Home() {
 					<a href={pdf} download>
 						<button
 							className='cv'
-							style={{ textAlign: 'left', border: 'none' }}
+							style={{ textAlign: 'left', border: 'none', width: '100%' }}
 						>
 							Download my CV
 						</button>
