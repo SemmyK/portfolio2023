@@ -65,21 +65,38 @@ function About() {
 											addict)
 										</li>
 									</Card.Text>
-									<Row style={{ boxSizing: 'border-box' }}>
-										<Col>
+									<Row
+										className='mx-auto'
+										style={{
+											boxSizing: 'border-box',
+											justifyContent: 'center',
+											alignItems: 'center',
+											display: 'flex',
+											width: '80%',
+										}}
+									>
+										<Col xs={8} md={6} className='mx-auto my-1'>
 											<button
 												onClick={() => navigate('/about/cv')}
-												className='cv'
-												style={{ textAlign: 'left', border: 'none' }}
+												className='cv py-1 px-2'
+												style={{
+													textAlign: 'center',
+													border: 'none',
+													width: '100%',
+												}}
 											>
 												See my CV
 											</button>
 										</Col>
-										<Col>
+										<Col xs={8} md={6} className='mx-auto my-1'>
 											<a href={pdf} download>
 												<button
-													className='cv'
-													style={{ textAlign: 'left', border: 'none' }}
+													className='cv py-1 px-2'
+													style={{
+														textAlign: 'center',
+														border: 'none',
+														width: '100%',
+													}}
 												>
 													Download my CV
 												</button>
