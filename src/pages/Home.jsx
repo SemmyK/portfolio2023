@@ -18,7 +18,7 @@ function Home() {
 				className='w-50 mx-auto  align-items-center'
 				style={{ boxSizing: 'border-box', justifyContent: 'center' }}
 			>
-				<Col xs={6} className='align-self-center mx-auto text-center'>
+				<Col xs={12} md={6} className='align-self-center mx-auto text-center'>
 					<button
 						onClick={() => navigate('/about/cv')}
 						className='cv py-2'
@@ -27,7 +27,7 @@ function Home() {
 						See my CV
 					</button>
 				</Col>
-				<Col xs={6} className='align-self-center mx-auto text-center'>
+				<Col xs={12} md={6} className='align-self-center mx-auto text-center'>
 					<a href={pdf} download>
 						<button
 							className='cv py-2'
