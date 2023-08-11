@@ -21,8 +21,8 @@ function Home() {
 				<Col xs={6} className='align-self-center mx-auto text-center'>
 					<button
 						onClick={() => navigate('/about/cv')}
-						className='cv'
-						style={{ textAlign: 'left', border: 'none', width: '100%' }}
+						className='cv py-2'
+						style={{ textAlign: 'center', border: 'none', width: '100%' }}
 					>
 						See my CV
 					</button>
@@ -30,8 +30,8 @@ function Home() {
 				<Col xs={6} className='align-self-center mx-auto text-center'>
 					<a href={pdf} download>
 						<button
-							className='cv'
-							style={{ textAlign: 'left', border: 'none', width: '100%' }}
+							className='cv py-2'
+							style={{ textAlign: 'center', border: 'none', width: '100%' }}
 						>
 							Download my CV
 						</button>
