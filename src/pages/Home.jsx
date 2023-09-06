@@ -5,7 +5,7 @@ import HomeProjects from '../components/HomeProjects'
 import Quote from '../components/Quote'
 import { Row, Col } from 'react-bootstrap'
 //assets
-import pdf from '../pdf/CV2023.pdf'
+import pdf from '../pdf/KubatSemiraCV.pdf'
 
 function Home() {
 	const navigate = useNavigate()

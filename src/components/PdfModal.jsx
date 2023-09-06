@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 //assets
-import cv1 from '../assets/CVpage1.png'
-import cv2 from '../assets/CVpage2.png'
+import cv1 from '../assets/cv1.png'
+import cv2 from '../assets/cv2.png'
 //components
 import { Row, Col } from 'react-bootstrap'
 
