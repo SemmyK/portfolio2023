@@ -60,10 +60,13 @@ function About() {
 											(Traversy Media)
 										</li>
 										<li>
-											Learning MERN stack with Udemy MERN Stack Course -
+											Learned MERN stack with Udemy MERN Stack Course -
 											MongoDb, Express, React and NodeJS by John Smilga (Coding
 											addict)
 										</li>
+										
+							<li>Learned NextJS, Typescript & TailwindCSS with several YouTube courses</li>
+							<li>Learning Docker, Kubernetes, Redis, and Jest with Zero To Mastery course The Complete Junior to Senior Web Developer Roadmap</li>
 									</Card.Text>
 									<Row
 										className='mx-auto'
