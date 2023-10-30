@@ -38,8 +38,8 @@ export default function HomeAbout() {
 								Finished Python Development program with IT Academy trying to
 								become full-stack developer
 							</li>
-							<li>Leared MERN stack</li>
-							<li>Leared NextJS, Typescript & TailwindCSS</li>
+							<li>Learned MERN stack</li>
+							<li>Learned NextJS, Typescript & TailwindCSS</li>
 							<li>Learning Docker, Kubernetes, Redis, and Jest</li>
 						</Card.Text>
 						<Link
