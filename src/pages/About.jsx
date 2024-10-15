@@ -9,7 +9,11 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 function About() {
 	const navigate = useNavigate()
 	return (
-		<Container fluid className='home-projects ' style={{ marginTop: '7em' }}>
+		<Container
+			fluid
+			className='home-projects '
+			style={{ marginTop: '7em' }}
+		>
 			<h2
 				className='text-center display-6'
 				style={{
@@ -27,10 +31,22 @@ function About() {
 				<section className='learning'>
 					<Container fluid>
 						<Row className='justify-content-between'>
-							<Col sm={10} md={5} className='text-right  img-col mx-auto'>
-								<img src={mern} alt='profile' className='img-fluid' />
+							<Col
+								sm={10}
+								md={5}
+								className='text-right  img-col mx-auto'
+							>
+								<img
+									src={mern}
+									alt='profile'
+									className='img-fluid'
+								/>
 							</Col>
-							<Col sm={12} md={6} className='short-about text-dark mx-auto '>
+							<Col
+								sm={12}
+								md={6}
+								className='short-about text-dark mx-auto '
+							>
 								<Card.Body>
 									<Card.Title className='display-6 my-3'>Learning</Card.Title>
 									<Card.Text>
@@ -60,13 +76,20 @@ function About() {
 											(Traversy Media)
 										</li>
 										<li>
-											Learned MERN stack with Udemy MERN Stack Course -
-											MongoDb, Express, React and NodeJS by John Smilga (Coding
-											addict)
+											Learned MERN stack with Udemy MERN Stack Course - MongoDb,
+											Express, React and NodeJS by John Smilga (Coding addict)
 										</li>
-										
-							<li>Learned NextJS, Typescript & TailwindCSS with several YouTube courses</li>
-							<li>Learning Docker, Kubernetes, Redis, and Jest with Zero To Mastery course The Complete Junior to Senior Web Developer Roadmap</li>
+
+										<li>
+											Learned NextJS, Typescript & TailwindCSS with several
+											YouTube courses
+										</li>
+										<li>
+											Learned Docker, Kubernetes, Redis, and Jest with Zero To
+											Mastery course The Complete Junior to Senior Web Developer
+											Roadmap
+										</li>
+										<li>Learning Typescript, Angular and MEAN stack.</li>
 									</Card.Text>
 									<Row
 										className='mx-auto'
@@ -78,7 +101,11 @@ function About() {
 											width: '80%',
 										}}
 									>
-										<Col xs={8} md={6} className='mx-auto my-1'>
+										<Col
+											xs={8}
+											md={6}
+											className='mx-auto my-1'
+										>
 											<button
 												onClick={() => navigate('/about/cv')}
 												className='cv py-1 px-2'
@@ -91,8 +118,15 @@ function About() {
 												See my CV
 											</button>
 										</Col>
-										<Col xs={8} md={6} className='mx-auto my-1'>
-											<a href={pdf} download>
+										<Col
+											xs={8}
+											md={6}
+											className='mx-auto my-1'
+										>
+											<a
+												href={pdf}
+												download
+											>
 												<button
 													className='cv py-1 px-2'
 													style={{
@@ -117,10 +151,22 @@ function About() {
 							className='justify-content-between'
 							style={{ flexDirection: 'row-reverse' }}
 						>
-							<Col sm={10} md={5} className='text-right  img-col mx-auto'>
-								<img src={coding} alt='profile' className='img-fluid' />
+							<Col
+								sm={10}
+								md={5}
+								className='text-right  img-col mx-auto'
+							>
+								<img
+									src={coding}
+									alt='profile'
+									className='img-fluid'
+								/>
 							</Col>
-							<Col sm={12} md={6} className='short-about text-dark mx-auto'>
+							<Col
+								sm={12}
+								md={6}
+								className='short-about text-dark mx-auto'
+							>
 								<Card.Body>
 									<Card.Title className='display-6 my-3'>Experience</Card.Title>
 
@@ -137,6 +183,15 @@ function About() {
 											>
 												Project we build
 											</Link>
+										</li>
+										<li>
+											<b>July 2024 - Oktober 2024</b> - Participated in Klika
+											Praksa Program
+											<br />
+											Internship program of 3 months. My role was Frontend
+											Developer - using React, RTK Query, MUI for styling and
+											Msal for login while building employees management app.
+											<br />
 										</li>
 										<li>
 											Continued learning and working on different personal
