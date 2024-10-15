@@ -24,28 +24,40 @@ function NavBar() {
 				className=' justify-content-between bg-transparent'
 			>
 				<NavbarBrand className='logo nav-item '>
-					<Link to='/' className='nav-link'>
+					<Link
+						to='/'
+						className='nav-link'
+					>
 						<img
 							src={logo}
 							alt='logo'
-							width={screen > '760' ? '170px' : '150px'}
+							width={screen > '760' ? '150px' : '130px'}
 						/>
 					</Link>
 				</NavbarBrand>
 				{screen > '760' && (
 					<Nav expand='lg'>
 						<NavItem className='nav-item  '>
-							<NavLink to='/' className=' text-center'>
+							<NavLink
+								to='/'
+								className=' text-center'
+							>
 								Home
 							</NavLink>
 						</NavItem>
 						<NavItem className='nav-item '>
-							<NavLink to='about' className=' text-center'>
+							<NavLink
+								to='about'
+								className=' text-center'
+							>
 								About
 							</NavLink>
 						</NavItem>
 						<NavItem className='nav-item '>
-							<NavLink to='projects' className=' text-center'>
+							<NavLink
+								to='projects'
+								className=' text-center'
+							>
 								Projects
 							</NavLink>
 						</NavItem>
@@ -54,7 +66,10 @@ function NavBar() {
 
 				{/* hamburger menu */}
 				{screen <= '760' && (
-					<Navbar expand='md' className=' hamburger-menu'>
+					<Navbar
+						expand='md'
+						className=' hamburger-menu'
+					>
 						<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
 						<Navbar.Offcanvas
 							id={`offcanvasNavbar-expand-md`}

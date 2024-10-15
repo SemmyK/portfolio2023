@@ -6,10 +6,21 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 
 export default function HomeAbout() {
 	return (
-		<Container fluid className='home-about'>
+		<Container
+			fluid
+			className='home-about mt-4'
+		>
 			<Row className='justify-content-between mx-auto'>
-				<Col sm={10} md={5} className='text-right  img-col mx-auto'>
-					<img src={Image} alt='profile' className='img-fluid' />
+				<Col
+					sm={10}
+					md={5}
+					className='text-right  img-col mx-auto'
+				>
+					<img
+						src={Image}
+						alt='profile'
+						className='img-fluid'
+					/>
 				</Col>
 				<Col
 					sm={12}
@@ -17,8 +28,11 @@ export default function HomeAbout() {
 					className='short-about text-dark mx-auto justify-self-center align-self-center'
 				>
 					<Card.Body>
-						<Card.Title className='display-6' style={{ fontWeight: '500' }}>
-							 Full-stack Developer
+						<Card.Title
+							className='display-6'
+							style={{ fontWeight: '500' }}
+						>
+							Full-stack Developer
 						</Card.Title>
 						<Card.Subtitle
 							className='mb-4 lead'
