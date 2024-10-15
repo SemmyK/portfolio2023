@@ -23,23 +23,39 @@ export default function HomeProjects() {
 					alignItems: 'center',
 				}}
 			>
-				<SyncLoader color='#662d91' size='30px' />
+				<SyncLoader
+					color='#662d91'
+					size='30px'
+				/>
 			</div>
 		)
 	}
 	return (
 		newProjects && (
-			<Container fluid className='home-projects '>
+			<Container
+				fluid
+				className='home-projects '
+			>
 				<CardGroup className='d-flex cards'>
 					<Row className='justify-content-around mx-0'>
 						{newProjects.length !== 0 &&
 							newProjects.map(project => (
-								<Col xs={10} md={5} lg={4} key={project.id} className='my-2'>
-									<Card border='light' className='single-card'>
+								<Col
+									xs={10}
+									md={5}
+									lg={4}
+									key={project.id}
+									className='my-2'
+								>
+									<Card
+										border='light'
+										className='single-card'
+									>
 										<Card.Header className='lead text-center'>
-											{project.used.slice(0, 4).map(item => (
-												<span key={item}>{item}</span>
-											))}
+											{project.used &&
+												project.used
+													.slice(0, 4)
+													.map(item => <span key={item}>{item}</span>)}
 										</Card.Header>
 										<Card.Body>
 											<Card.Title className='text-center project-title'>
