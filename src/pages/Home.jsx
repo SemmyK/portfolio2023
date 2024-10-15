@@ -11,7 +11,6 @@ function Home() {
 	const navigate = useNavigate()
 	return (
 		<div>
-			<Quote />
 			<HomeAbout />
 			<HomeProjects />
 			<Row
@@ -38,7 +37,10 @@ function Home() {
 					xl={3}
 					className='align-self-center my-1 mx-auto text-center'
 				>
-					<a href={pdf} download>
+					<a
+						href={pdf}
+						download
+					>
 						<button
 							className='cv py-2'
 							style={{ textAlign: 'center', border: 'none', width: '100%' }}
