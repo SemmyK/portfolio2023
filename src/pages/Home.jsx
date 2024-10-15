@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 //components
 import HomeAbout from '../components/HomeAbout'
 import HomeProjects from '../components/HomeProjects'
-import Quote from '../components/Quote'
+
 import { Row, Col } from 'react-bootstrap'
 //assets
 import pdf from '../pdf/KubatSemiraCV.pdf'
